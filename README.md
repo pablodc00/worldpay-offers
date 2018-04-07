@@ -3,7 +3,7 @@
 
 ## To run project type:
 ```mvn spring-boot:run```  
-or open the project with any IDE and just Run As Java Appliction class OffersApplication.java  
+or open the project with any IDE and just Run As Java Application class OffersApplication.java  
 
 To run testcases:  
 ```mvn test```
@@ -33,7 +33,7 @@ http://localhost:8080/api/v1/offers/10
 
 ### 1) Get offers by description
 GET  
-http://localhost:8080/api/v1/offers/byDescription?description='an offer'
+http://localhost:8080/api/v1/offers/byDescription?description=an-offer
 
 
 ### 3) Get all offers
