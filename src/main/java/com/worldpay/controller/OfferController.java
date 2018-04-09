@@ -17,7 +17,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.worldpay.model.Offer;
 import com.worldpay.service.OfferService;
-import com.worldpay.util.OfferConstants;
+import com.worldpay.utils.OfferConstants;
 
 @RestController
 @RequestMapping(OfferConstants.API_URI)
