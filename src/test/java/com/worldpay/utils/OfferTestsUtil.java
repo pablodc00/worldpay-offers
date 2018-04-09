@@ -1,4 +1,4 @@
-package com.worldpay.util;
+package com.worldpay.utils;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -9,7 +9,7 @@ import java.util.Locale;
 import com.worldpay.model.Offer;
 import com.worldpay.model.Offer.Status;
 
-public class OfferUtil {
+public class OfferTestsUtil {
 
     public static Offer getMockOffer() {
         

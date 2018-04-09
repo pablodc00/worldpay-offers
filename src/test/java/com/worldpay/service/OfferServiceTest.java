@@ -19,7 +19,7 @@ import com.google.common.collect.Lists;
 import com.worldpay.dao.OfferRepository;
 import com.worldpay.model.Offer;
 import com.worldpay.model.Offer.Status;
-import com.worldpay.util.OfferUtil;
+import com.worldpay.utils.OfferTestsUtil;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -39,9 +39,9 @@ public class OfferServiceTest {
     @Test
     public void testCreateOffer() {
         
-        Offer offer1 = OfferUtil.getMockOffer();
+        Offer offer1 = OfferTestsUtil.getMockOffer();
         
-        Offer offer2 = OfferUtil.getMockOffer();
+        Offer offer2 = OfferTestsUtil.getMockOffer();
         offer2.setId(10L);
         
         when(offerRepositoryMock.save(offer1)).thenReturn(offer2);
@@ -57,17 +57,17 @@ public class OfferServiceTest {
         LocalDate today = LocalDate.now();
         List<Offer> offers = Lists.newArrayList();
 
-        Offer offer = OfferUtil.getMockOffer();
+        Offer offer = OfferTestsUtil.getMockOffer();
         offer.setId(10L);
         offers.add(offer);
         
-        offer = OfferUtil.getMockOffer();
+        offer = OfferTestsUtil.getMockOffer();
         offer .setId(20L);
         offer.setDescription("Offer Two");
         offer.setPrice(new BigDecimal("542.63"));
         offers.add(offer);
         
-        offer = OfferUtil.getMockOffer();
+        offer = OfferTestsUtil.getMockOffer();
         offer.setId(30L);
         offer.setDescription("Offer Three");
         offer.setPrice(new BigDecimal("953.54"));

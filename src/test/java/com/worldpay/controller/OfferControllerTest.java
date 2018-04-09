@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.worldpay.model.Offer;
 import com.worldpay.service.OfferService;
-import com.worldpay.util.OfferUtil;
+import com.worldpay.utils.OfferTestsUtil;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
@@ -28,8 +28,8 @@ public class OfferControllerTest {
     
     @Test
     public void testCreateOffer() {
-        Offer offer1 = OfferUtil.getMockOffer();
-        Offer offer2 = OfferUtil.getMockOffer();
+        Offer offer1 = OfferTestsUtil.getMockOffer();
+        Offer offer2 = OfferTestsUtil.getMockOffer();
         offer2.setId(10L);
         
         when(offerServiceMock.createOffer(offer1)).thenReturn(offer2);
